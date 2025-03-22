@@ -27,7 +27,7 @@ df['Answers'] = df['Answers'].str.lower()
 
 # Create TF-IDF vectorizer
 vectorizer = TfidfVectorizer()
-question_vectors = vectorizer.fit_transform(df['Question'])
+question_vectors = vectorizer.fit_transform(df['Questions'])
 
 # Configure Gemini API (replace with your actual API key)
 API_KEY = "AIzaSyDrtHlUQEk7F0xH4Vr26JQpV9mO1YofO4U"  # DO NOT EMBED KEYS DIRECTLY! Use st.secrets or env vars!
