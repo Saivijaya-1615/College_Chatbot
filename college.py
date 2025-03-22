@@ -41,7 +41,7 @@ def find_closest_question(user_query, vectorizer, question_vectors, df):
     best_match_index = similarities.argmax()
     best_match_score = similarities[best_match_index]
     if best_match_score > 0.3:  # Threshold for similarity
-        return df.iloc[best_match_index]['Answer']
+        return df.iloc[best_match_index]['Answers']
     else:
         return None
 
