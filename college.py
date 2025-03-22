@@ -22,8 +22,8 @@ except Exception as e:
 
 # Preprocess data
 df = df.fillna("")
-df['Question'] = df['Question'].str.lower()
-df['Answer'] = df['Answer'].str.lower()
+df['Questions'] = df['Questions'].str.lower()
+df['Answers'] = df['Answers'].str.lower()
 
 # Create TF-IDF vectorizer
 vectorizer = TfidfVectorizer()
